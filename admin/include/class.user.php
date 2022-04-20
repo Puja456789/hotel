@@ -70,7 +70,7 @@
             
             
             
-            public function booknow($checkin, $checkout, $name, $phone)
+            public function booknow($checkin, $checkout, $name, $phone,$roomname)
             {
                     
                     $sql="SELECT * FROM rooms WHERE room_cat='$roomname' AND (room_id NOT IN (SELECT DISTINCT room_id
